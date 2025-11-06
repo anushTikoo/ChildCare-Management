@@ -24,6 +24,9 @@ from app.models import (
     billing as billing_model
 )  # noqa: F401
 
+# Initialize FastAPI app
+app = FastAPI(title="Child Care Center Management System - API")
+
 # Create tables on startup (safe even in production)
 @app.on_event("startup")
 def on_startup():
@@ -34,9 +37,6 @@ def on_startup():
     except Exception as e:
         print("❌ Table creation failed:", e)
 
-
-# Initialize FastAPI app
-app = FastAPI(title="Child Care Center Management System - API")
 
 # Enable CORS for frontend
 app.add_middleware(
