@@ -5,14 +5,14 @@ import Loader from "../../components/Loader";
 import { AuthContext } from "../../contexts/AuthContext";
 import TextInput from "../../components/TextInput";
 import TextArea from "../../components/TextArea";
-import { 
-  User, 
-  Calendar, 
-  Phone, 
-  MapPin, 
-  Heart, 
-  AlertTriangle, 
-  Save, 
+import {
+  User,
+  Calendar,
+  Phone,
+  MapPin,
+  Heart,
+  AlertTriangle,
+  Save,
   ArrowLeft,
   Baby
 } from "lucide-react";
@@ -129,7 +129,7 @@ export default function ChildForm() {
               </div>
               <h2 className="text-xl font-semibold text-gray-900">Basic Information</h2>
             </div>
-            
+
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -162,7 +162,7 @@ export default function ChildForm() {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-md font-semibold text-gray-700 mb-2">
                   Gender *
                 </label>
                 <select
@@ -189,7 +189,7 @@ export default function ChildForm() {
               </div>
               <h2 className="text-xl font-semibold text-gray-900">Parent Information</h2>
             </div>
-            
+
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -248,7 +248,7 @@ export default function ChildForm() {
             </div>
             <h2 className="text-xl font-semibold text-gray-900">Medical Information</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
